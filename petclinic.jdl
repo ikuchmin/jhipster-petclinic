@@ -1,0 +1,28 @@
+application {
+  config {
+    applicationType monolith,
+    baseName PetClinic
+    packageName org.springframework.samples.petclinic,
+    prodDatabaseType postgresql,
+    buildTool gradle,
+    testFrameworks [cypress],
+    clientFramework react,
+    enableTranslation true,
+    nativeLanguage en,
+    languages [en, es]
+  }
+  entities Vet
+}
+
+entity Vet {
+  firstName String required
+  lastName String required
+}
+
+entity Speciality {
+  name String required
+}
+
+relationship OneToMany {
+  Vet{specialities} to Speciality
+}
