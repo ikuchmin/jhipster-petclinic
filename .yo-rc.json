@@ -1,0 +1,22 @@
+{
+  "generator-jhipster": {
+    "applicationIndex": 0,
+    "applicationType": "monolith",
+    "baseName": "PetClinic",
+    "buildTool": "gradle",
+    "cacheProvider": "ehcache",
+    "clientFramework": "no",
+    "devDatabaseType": "postgresql",
+    "entities": ["Vet", "Speciality", "Pet", "PetType", "Owner", "Visit"],
+    "jhipsterVersion": "8.1.0",
+    "jwtSecretKey": "NThjZWMyOTRjZTE1YzVkZmJlMjJjZTRlM2FmNTNhNGNlOTM1OTQxZGRmNzFkYzU0NDE4N2I0ZTgxOGExNTFjZmVjYzdkZDVkZjkzM2Q4MTRjODA1OWQ1ZDUxNDQ2ZDNmNjE2ZjFjNmQxYjYwNjk3YmZlOTlkOTRkOWU5MmMyMzY=",
+    "languages": ["en", "es"],
+    "lastLiquibaseTimestamp": 1710945279000,
+    "messageBroker": "kafka",
+    "nativeLanguage": "en",
+    "packageFolder": "org/springframework/samples/petclinic",
+    "packageName": "org.springframework.samples.petclinic",
+    "prodDatabaseType": "postgresql",
+    "skipClient": true
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "annotations": {
+    "changelogDate": "20240320143239"
+  },
+  "applications": ["PetClinic"],
+  "dto": "mapstruct",
+  "entityTableName": "pet_type",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "PetType",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

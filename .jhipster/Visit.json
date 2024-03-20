@@ -1,0 +1,20 @@
+{
+  "annotations": {
+    "changelogDate": "20240320143439"
+  },
+  "applications": ["PetClinic"],
+  "dto": "mapstruct",
+  "entityTableName": "visit",
+  "fields": [
+    {
+      "fieldName": "date",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Visit",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}
