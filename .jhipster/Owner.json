@@ -1,0 +1,45 @@
+{
+  "annotations": {
+    "changelogDate": "20240320072802"
+  },
+  "applications": ["PetClinic"],
+  "dto": "mapstruct",
+  "entityTableName": "owner",
+  "fields": [
+    {
+      "fieldName": "firstName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "address",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "city",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telephone",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Owner",
+  "pagination": "infinite-scroll",
+  "relationships": [
+    {
+      "otherEntityName": "pet",
+      "relationshipName": "pets",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}
