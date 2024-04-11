@@ -2,5 +2,10 @@
 <project version="4">
   <component name="AmplicodeJpaIdeaProjectConfig">
     <option name="renamerInitialized" value="true" />
+    <option name="sourceModelValue" value="Default" />
+    <option name="targetDbValue" value="6b2ebe01-0c60-45b7-96c7-0999ef882f9f" />
+    <option name="updateChangeLogPath" value="src/main/resources/config/liquibase/master.xml" />
+    <option name="updateDbConnectionName" value="6b2ebe01-0c60-45b7-96c7-0999ef882f9f" />
+    <option name="liquibaseAuthor" value="" />
   </component>
 </project>

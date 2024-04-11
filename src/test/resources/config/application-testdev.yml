@@ -8,6 +8,16 @@
 # More information on database containers: https://www.testcontainers.org/modules/databases/
 # ===================================================================
 
+# basic log level for all messages
+#logging:
+#  level:
+#    org.hibernate: info
+#    org.hibernate.SQL: debug
+#    org.hibernate.orm.jdbc.bind: trace
+#    org.hibernate.stat: debug
+#    org.hibernate.SQL_SLOW: info
+#    org.hibernate.cache: debug
+
 spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
@@ -33,3 +43,4 @@ spring:
       hibernate.jdbc.time_zone: UTC
       hibernate.timezone.default_storage: NORMALIZE
       hibernate.query.fail_on_pagination_over_collection_fetch: true
+    show-sql: true

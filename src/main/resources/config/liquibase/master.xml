@@ -21,6 +21,7 @@
     <include file="config/liquibase/changelog/20240320142939_added_entity_constraints_Vet.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20240320143139_added_entity_constraints_Pet.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20240320143439_added_entity_constraints_Visit.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240404172349_add_sequence.xml"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>
