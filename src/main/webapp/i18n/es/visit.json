@@ -1,0 +1,26 @@
+{
+  "petClinicApp": {
+    "visit": {
+      "home": {
+        "title": "Visits",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Visit",
+        "createOrEditLabel": "Crear o editar Visit",
+        "notFound": "Ningún Visits encontrado"
+      },
+      "created": "Un nuevo Visit ha sido creado con el identificador {{ param }}",
+      "updated": "Un Visit ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Visit ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Visit {{ id }}?"
+      },
+      "detail": {
+        "title": "Visit"
+      },
+      "id": "ID",
+      "date": "Date",
+      "vet": "Vet",
+      "pet": "Pet"
+    }
+  }
+}

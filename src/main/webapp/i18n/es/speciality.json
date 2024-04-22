@@ -1,0 +1,25 @@
+{
+  "petClinicApp": {
+    "speciality": {
+      "home": {
+        "title": "Specialities",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Speciality",
+        "createOrEditLabel": "Crear o editar Speciality",
+        "notFound": "Ningún Specialities encontrado"
+      },
+      "created": "Un nuevo Speciality ha sido creado con el identificador {{ param }}",
+      "updated": "Un Speciality ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Speciality ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Speciality {{ id }}?"
+      },
+      "detail": {
+        "title": "Speciality"
+      },
+      "id": "ID",
+      "name": "Name",
+      "vet": "Vet"
+    }
+  }
+}

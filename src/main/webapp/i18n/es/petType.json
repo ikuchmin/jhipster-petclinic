@@ -1,0 +1,24 @@
+{
+  "petClinicApp": {
+    "petType": {
+      "home": {
+        "title": "Pet Types",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Pet Type",
+        "createOrEditLabel": "Crear o editar Pet Type",
+        "notFound": "Ningún Pet Types encontrado"
+      },
+      "created": "Un nuevo Pet Type ha sido creado con el identificador {{ param }}",
+      "updated": "Un Pet Type ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Pet Type ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Pet Type {{ id }}?"
+      },
+      "detail": {
+        "title": "Pet Type"
+      },
+      "id": "ID",
+      "name": "Name"
+    }
+  }
+}

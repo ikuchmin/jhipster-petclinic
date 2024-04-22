@@ -1,0 +1,28 @@
+{
+  "petClinicApp": {
+    "vet": {
+      "home": {
+        "title": "Vets",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Vet",
+        "createOrEditLabel": "Create or edit a Vet",
+        "notFound": "No Vets found"
+      },
+      "created": "A new Vet is created with identifier {{ param }}",
+      "updated": "A Vet is updated with identifier {{ param }}",
+      "deleted": "A Vet is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Vet {{ id }}?"
+      },
+      "detail": {
+        "title": "Vet"
+      },
+      "id": "ID",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "salary": "Salary",
+      "visits": "Visits",
+      "specialities": "Specialities"
+    }
+  }
+}

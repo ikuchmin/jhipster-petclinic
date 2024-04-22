@@ -1,0 +1,37 @@
+{
+  "annotations": {
+    "changelogDate": "20240422073842"
+  },
+  "applications": ["PetClinic"],
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "birthDate",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Pet",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "visit",
+      "relationshipName": "visits",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "petType",
+      "relationshipName": "type",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

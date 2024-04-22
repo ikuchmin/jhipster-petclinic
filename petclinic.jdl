@@ -3,26 +3,68 @@ application {
     applicationType monolith,
     baseName PetClinic
     packageName org.springframework.samples.petclinic,
-    prodDatabaseType postgresql,
-    buildTool gradle,
-    testFrameworks [cypress],
     clientFramework react,
-    enableTranslation true,
+    prodDatabaseType postgresql,
+    devDatabaseType postgresql,
+    cacheProvider ehcache,
+    messageBroker kafka,
+    buildTool gradle,
     nativeLanguage en,
     languages [en, es]
   }
-  entities Vet
+  entities Vet, Speciality, Pet, PetType, Owner, Visit
 }
 
 entity Vet {
   firstName String required
   lastName String required
+  salary BigDecimal required
 }
 
 entity Speciality {
+  name String unique required
+}
+
+relationship ManyToMany {
+  Vet{specialities} to Speciality
+}
+
+entity Owner {
+  firstName String required
+  lastName String required
+  email String unique
+  address String
+  city String
+  telephone String
+}
+
+entity Pet {
+  name String required
+  birthDate LocalDate
+}
+
+entity PetType {
   name String required
 }
 
-relationship OneToMany {
-  Vet{specialities} to Speciality
+relationship ManyToOne {
+  Pet{type} to PetType
 }
+
+relationship OneToMany {
+  Owner{pets} to Pet
+}
+
+entity Visit {
+  date LocalDate
+}
+
+relationship OneToMany {
+  Pet{visits} to Visit
+  Vet{visits} to Visit
+}
+
+dto * with mapstruct
+filter *
+paginate * with pagination except Owner
+paginate Owner with infinite-scroll
